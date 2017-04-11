@@ -7,23 +7,42 @@
 	</script>
 
 	<script type="text/javascript" href="../scripts/page_effects.js"></script>
-
+	<script type="text/javascript" href="../scripts/jQueryScripts.js"></script>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="../css/buttons.css">
+	<link rel="stylesheet" href="../css/styles.css">
 
 	<script>
 		var cssType = "default";
 	</script>
+
+	<script>
+		$(document).ready(function(){
+			$("#aboutNavigator").click(function(){
+				$("html, body").animate({ scrollTop: $("#aboutId").offset(top)}, 500)
+				return true;
+			});
+		});
+	</script>
 </head >
 
-<body></body>
-	<div>
-  <button class="btn striped-shadow white"><span>Howdy</span></button>
-  <button class="btn striped-shadow blue"><span>Hello</span></button>
-    <button class="btn striped-shadow dark"><span>Hi ya'</span></button>
- </div>
+<body>
+
+	<ul class="navigation">
+		<li>
+			<a href="#about" id="aboutNavigator">About</a>
+			<span></span>
+		</li>
+		<li>
+			<a href="#contact">Contact</a>
+			<span></span>
+		</li>
+		<li>
+			<a href="#projects">Projects</a>
+			<span></span>
+		</li>
+	</ul>
 
 	<div class="container" id="clearableContainer" >
 		<div>
@@ -45,8 +64,28 @@
 			<button class="effect" type="classy" title="Classy"> </button>
 		</div>
 	</div>
+	<!-- HTML 5 supports sections -->
+	<div id="aboutId">
+		<div class="section">
+			<div class="About">
+			</div>
+		</div>
+	</div>
 
+	<div class="section">
+		<div class="contact">	
+			<p></p>
+		</div>
+	</div>
+
+	<div class="section">
+		<div class="resume">
+		</div>
+	</div>
+
+
+</body>
 	<footer>
-		To contact me please email me at: thomas.nast23 (at) gmail.com
+		<p class="white-text"> To contact me please email me at: thomas.nast23 (at) gmail.com</p>
 	</footer>
 </html>

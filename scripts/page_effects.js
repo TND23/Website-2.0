@@ -18,3 +18,18 @@ function removeStyle(){
 function testJquery(){
 
 }
+
+function navigateToAbout(){
+
+}
+
+function findPosition(el){
+	var currentTop = 0;
+	if(el.offsetParent){
+		currentTop+= el.offsetTop;
+	}
+
+	while (el = ){
+
+	}
+}

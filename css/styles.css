@@ -1,0 +1,43 @@
+/* Credit to: Daniel Powell */
+
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+:focus{
+  outline: none;
+}
+
+
+body{
+  background-image: url("../resources/background.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+ul.navigation{
+	width:100%;
+}
+
+.navigation li{
+	display: inline;
+	background-color: blue;
+}
+
+.navigation li a{
+	display: inline-block;
+	padding: 10px;
+	color: white;
+}
+
+.navigation li a:hover{
+	color: black;
+}
+
+p.white-text{
+	color:white;
+}
